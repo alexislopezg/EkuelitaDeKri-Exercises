@@ -16,7 +16,7 @@ public class LightBulb {
             isOn = false;
             System.out.println("Light bulb is turned off");
         } else {
-            System.out.println("Light bulb is already on, you can´t turn it on twice!");
+            System.out.println("Light bulb is already off, you can´t turn it on twice!");
         }
     }
 }
