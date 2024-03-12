@@ -28,6 +28,9 @@ public class Main {
         stackingToy.addRing("Red");
 
         stackingToy.removeRing();
+        stackingToy.removeRing();
+        stackingToy.removeRing();
+        stackingToy.removeRing();
 
     }
 }

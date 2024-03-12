@@ -3,11 +3,10 @@ import java.util.List;
 
 public class StackingToy {
 
-    private List<String> stackedRings = new ArrayList<>();
+    private final List<String> stackedRings = new ArrayList<>();
 
     public void addRing(String ring) {
         stackedRings.add(ring);
-
 
         for (var addedRings : stackedRings) {
             System.out.println(addedRings);
@@ -15,8 +14,13 @@ public class StackingToy {
     }
 
     public void removeRing() {
-        System.out.println("Removed ring: " + stackedRings.getLast());
-        stackedRings.removeLast();
+        if (stackedRings.isEmpty()) {
+            System.out.println("Stacked toy is empty.");
+        }
+        else {
+            System.out.println("Removed ring: " + stackedRings.getLast());
+            stackedRings.removeLast();
+        }
 
         for (var addedRings : stackedRings) {
             System.out.println(addedRings);
